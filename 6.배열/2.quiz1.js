@@ -18,8 +18,14 @@ var scores=[98,32,66,87,49,12];
 var total=0;
 scores[scores.length]=100;
 
+/*
 for(var i = 0 ; i < scores.length; i++){
     total += scores[i];
+}
+*/
+
+for(var score of scores){
+  total += score;
 }
 
 //평균 저장 변수
