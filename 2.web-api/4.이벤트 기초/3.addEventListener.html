@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="btn">클릭!</button>
+
+    <script>
+        const $btn = document.querySelector('#btn');
+
+        //핸들러 함수 정의
+        function greeting() {
+            alert('Hello');
+        }
+
+        $btn.addEventListener('click', greeting);
+
+        $btn.addEventListener('click', function() {
+            alert('World');
+        });
+
+        //이벤트핸들러 제거
+        $btn.removeEventListener('click',greeting);
+
+    </script>
+</body>
+</html>
